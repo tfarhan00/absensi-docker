@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.selectedMark {
+  position: relative;
+}
+
+.selectedMark::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0.25rem;
+  background-color: #6366f1;
+  border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  -ms-border-radius: 10px 0 0 10px;
+  -o-border-radius: 10px 0 0 10px;
+}
+
+.patternBg {
+  background: radial-gradient(circle, #4f46e460 10%, transparent 11%),
+    radial-gradient(circle at bottom left, #4f46e460 5%, transparent 6%),
+    radial-gradient(circle at bottom right, #4f46e460 5%, transparent 6%),
+    radial-gradient(circle at top left, #4f46e460 5%, transparent 6%),
+    radial-gradient(circle at top right, #4f46e460 5%, transparent 6%);
+  background-size: 1em 1em;
+  background-color: #f8fafc;
+}
